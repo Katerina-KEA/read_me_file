@@ -1,6 +1,8 @@
 # read_me_file
 
 ES6: Use the Rest Parameter with Function Parameters
+Используйте параметр Rest с параметрами функции
+
 const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
 }
@@ -8,6 +10,8 @@ const sum = (...args) => {
  //============================================================== 
   
 ES6: Use Destructuring Assignment to Extract Values from Objects
+Используйте присваивание деструктурирования для извлечения значений из объектов
+
 const HIGH_TEMPERATURES = {
   yesterday: 75,
   today: 77,
@@ -23,6 +27,8 @@ const [highToday,highTomorrow] = HIGH_TEMPERATURES;
 
 
 ES6: Use Destructuring Assignment to Assign Variables from Objects
+Используйте назначение деструктурирования для назначения переменных из объектов
+
 const HIGH_TEMPERATURES = {
   yesterday: 75,
   today: 77,
@@ -37,6 +43,8 @@ const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
  //============================================================== 
 
 ES6: Use Destructuring Assignment to Assign Variables from Nested Objects
+Используйте назначение деструктурирования для назначения переменных из вложенных объектов
+
 const LOCAL_FORECAST = {
   yesterday: { low: 61, high: 75 },
   today: { low: 64, high: 77 },
@@ -51,6 +59,8 @@ const {today: {low: lowToday, high: highToday}} = LOCAL_FORECAST;
  //============================================================== 
 
 ES6: Use Destructuring Assignment to Assign Variables from Arrays
+Используйте назначение деструктурирования для назначения переменных из массивов
+
 let a = 8, b = 6;
 // Only change code below this line
 [a,b] = [b,a];
@@ -59,6 +69,8 @@ let a = 8, b = 6;
  //============================================================== 
 
 ES6: Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
+Используйте назначение деструктурирования с параметром Rest для переназначения элементов массива
+
 const source = [1,2,3,4,5,6,7,8,9,10];
 function removeFirstTwo(list) {
   // Only change code below this line
@@ -72,6 +84,8 @@ const arr = removeFirstTwo(source);
  //============================================================== 
 
 ES6: Use Destructuring Assignment to Pass an Object as a Function's Parameters
+Используйте присваивание деструктуризации для передачи объекта в качестве параметров функции
+
 const stats = {
   max: 56.78,
   standard_deviation: 4.34,
@@ -89,6 +103,8 @@ const half = ({min, max}) => (max + min) / 2.0;
  //============================================================== 
 
 ES6: Create Strings using Template Literals
+Создание строк с использованием шаблонных литералов
+
 const result = {
   success: ["max-length", "no-amd", "prefer-arrow-functions"],
   failure: ["no-var", "var-on-top", "linebreak"],
@@ -111,12 +127,16 @@ const failuresList = makeList(result.failure);
  //============================================================== 
 
 ES6: Write Concise Object Literal Declarations Using Object Property Shorthand
+Напишите краткие литеральные объявления объекта, используя сокращенную запись свойства объекта
+
 const createPerson = (name, age, gender) => ({name,age,gender});
 
  
  //============================================================== 
 
 ES6: Write Concise Declarative Functions with ES6
+Пишите краткие декларативные функции с помощью ES6
+
 // Only change code below this line
 const bicycle = {
   gear: 2,
@@ -132,6 +152,8 @@ console.log(bicycle.gear);
  //============================================================== 
 
 ES6: Use class Syntax to Define a Constructor Function
+Используйте синтаксис класса для определения функции конструктора
+
 // Only change code below this line
 class Vegetable{
     constructor(name){
@@ -147,6 +169,8 @@ console.log(carrot.name); // Should display 'carrot'
  //============================================================== 
 
 ES6: Use getters and setters to Control Access to an Object
+Используйте геттеры и сеттеры для управления доступом к объекту
+
 // Only change code below this line
 class Thermostat{
     constructor(fahrenheit){
@@ -172,6 +196,8 @@ temp = thermos.temperature; // 26 in Celsius
  //============================================================== 
 
 ES6: Create a Module Script
+Создать скрипт модуля
+
 <html>
   <body>
     <!-- Only change code below this line -->
@@ -184,6 +210,8 @@ ES6: Create a Module Script
  //============================================================== 
 
 ES6: Use export to Share a Code Block
+Используйте экспорт, чтобы поделиться блоком кода
+
 const uppercaseString = (string) => {
   return string.toUpperCase();
 }
@@ -198,6 +226,8 @@ export {uppercaseString, lowercaseString};
  //============================================================== 
 
 ES6: Reuse JavaScript Code Using import
+Повторное использование кода JavaScript с помощью импорта
+
 import {uppercaseString, lowercaseString} from './string_functions.js';  
 // Only change code above this line
 
@@ -208,6 +238,8 @@ lowercaseString("WORLD!");
  //============================================================== 
 
 ES6: Use * to Import Everything from a File
+Используйте * для импорта всего из файла
+
 // Only change code above this line
 import * as stringFunctions from "./string_functions.js";
 stringFunctions.uppercaseString("hello");
@@ -217,6 +249,8 @@ stringFunctions.lowercaseString("WORLD!");
  //============================================================== 
 
 ES6: Create an Export Fallback with export default
+Создайте резервный вариант экспорта с экспортом по умолчанию
+
 export default function subtract(x, y) {
   return x - y;
 }
@@ -225,6 +259,8 @@ export default function subtract(x, y) {
  //============================================================== 
 
 ES6: Import a Default Export
+Импорт экспорта по умолчанию
+
 import subtract from "./math_functions.js";
 // Only change code above this line
 
